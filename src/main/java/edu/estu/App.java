@@ -1,7 +1,13 @@
-public class Main {
+package edu.estu;
+
+/**
+ * Hello world!
+ *
+ */
+public class App {
     public static void main(String[] args) {
 
-        if (args.length > 0 && args[0].toLowerCase().equals("-l")) {
+        if (args.length > 0 && args[0].toLowerCase().equals("--l")) {
 
             String text;
             switch (args[1]) {
@@ -23,7 +29,7 @@ public class Main {
 
             System.out.println(text);
         } else {
-            System.out.println("Usage: java Main.java -l (lang)");
+            System.out.println("Usage: java Main.java --l (lang)");
         }
     }
 }
